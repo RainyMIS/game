@@ -1,0 +1,138 @@
+.allDesk {
+    display: flex;
+    align-items: center;
+    top: 50%;
+    position: absolute;
+    left: 49.7%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.descLines {
+    display: grid;
+    grid-template-areas:
+  "a andar"
+  "b bahar";
+
+    grid-template-rows: 162px 162px;
+    grid-template-columns: 32px 572px;
+}
+
+.letterA {
+    grid-area: a;
+    display: flex;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 48px;
+    color: #003134;
+}
+
+.letterB {
+    grid-area: b;
+    display: flex;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 48px;
+    color: #003134;
+}
+
+.jokerWrapper {
+    background-image: url("../../img/CardOnDesc.svg");
+    background-size: 100px 150px;
+    border-radius: 6px;
+    width: 100px;
+    height: 150px;
+}
+
+.jokerLogo {
+    background-image: url("../../img/Joker.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 68px 26px;
+    width: 100px;
+    height: 150px;
+    border: 2px solid rgba(17, 112, 118, 1);
+    border-radius: 8px;
+    margin-right: 16px;
+    padding: 2px;
+}
+
+.jokerCard {
+    width: 100px;
+    height: 150px;
+    opacity: 0;
+    animation: show .5s forwards;
+}
+
+.andarLineWrapper {
+    grid-area: andar;
+    display: flex;
+    align-items: center;
+    margin: 6px;
+}
+
+.andarCardPlace {
+    background-image: url("../../img/CardOnDesc.svg");
+    background-size: 100px 150px;
+    width: 100px;
+    border-radius: 3px;
+    height: 150px;
+    margin: 6px;
+}
+
+.andarCards {
+    width: 100px;
+    height: 150px;
+    margin-right: 12px;
+    opacity: 0;
+    animation: show .5s forwards;
+}
+
+.baharLineWrapper {
+    grid-area: bahar;
+    display: flex;
+    align-items: center;
+    margin: 6px;
+}
+
+.baharCardPlace {
+    background-image: url("../../img/CardOnDesc.svg");
+    background-size: 100px 150px;
+    width: 100px;
+    border-radius: 3px;
+    height: 150px;
+    margin: 6px;
+}
+
+.baharCards {
+    opacity: 0;
+    width: 100px;
+    height: 150px;
+    margin-right: 12px;
+    animation: show .5s forwards;
+}
+
+.cards {
+    display: flex;
+}
+
+.goldCardWrapper {
+    background-image: url("../../img/goldCard.svg");
+    background-size: 100px 150px;
+    width: 100px;
+    height: 150px;
+    margin-left: 52px;
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.goldCardText {
+    margin: 58px 2px 62px 8px;
+    width: 90px;
+    height: 30px;
+}
+
+@keyframes show {
+    100% {
+        opacity: 1;
+    }
+}

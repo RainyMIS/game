@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
+.allApp {
+    background: url("./img/desc.png") fixed center center/1240px 490px no-repeat,
+    url("./img/glowBack.png") fixed center center/1362px 636px no-repeat;
+    padding: 0;
+    min-height: 100vh;
+}
